@@ -1,10 +1,19 @@
+import styled from "styled-components";
+import logo from "../assets/images/logo.svg";
+
+const Container = styled.header`
+  background: #d73035;
+`;
+
 export function Header() {
-    return (
-        <header>
-            <div className="page-details">
-                <h1>Pedidos</h1>
-                <h2>Acompanhe os pedidos dos clientes</h2>
-            </div>
-        </header>
-    );
+  return (
+    <Container>
+      <div className="page-details">
+        <h1>Pedidos</h1>
+        <h2>Acompanhe os pedidos dos clientes</h2>
+      </div>
+
+      <img src={logo} alt="WaiterApp" />
+    </Container>
+  );
 }
