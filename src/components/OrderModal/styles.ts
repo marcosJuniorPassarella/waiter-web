@@ -42,5 +42,16 @@ strong{
         font-size: 14px;
         opacity: 0.8px;
     }
+
+    div {
+    margin-top: 8px
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
 }
+`
+
+export const OrderDetails = styled.div`
+margin-top: 32px;
 `
