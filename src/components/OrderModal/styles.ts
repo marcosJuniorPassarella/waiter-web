@@ -34,4 +34,13 @@ strong{
         background: transparent;
     }
 }
+
+.status-container {
+    margin-top: 32px;
+
+    small {
+        font-size: 14px;
+        opacity: 0.8px;
+    }
+}
 `

@@ -10,7 +10,8 @@ padding: 16px;
 border: 1px solid rgba(204, 204, 204, 0.4);
 border-radius: 16px;
 
-header {
+/* COM O > DIZEMOS PARA APLICAR O ESTILO DO HEADER APENAS PARA HEADER QUE SEJAM FILHOS DIRETOS DESSE COMPONENTE */
+> header {
     padding: 8px;
     font-size: 14px;
     display: flex;
