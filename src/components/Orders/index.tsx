@@ -2,11 +2,11 @@ import { Container } from "./styles";
 import { OrdersBoard } from "../OrdersBoard/index";
 import { Order } from "../../types/Order";
 
-const orders = [
+const orders: Order[] = [
   {
     _id: "637574f256672bca8e8bd0f7",
     table: "123",
-    status: "WAITING",
+    status: 'WAITING',
     products: [
       {
         product: {
