@@ -1,12 +1,14 @@
-import { Overlay, ModalBody, OrderDetails } from './styles';
+import { Overlay, ModalBody, OrderDetails } from "./styles";
 import closeIcon from "../../assets/images/close-icon.svg";
+import { Order } from "../../types/Order";
 
 interface OrderModalProps {
   visible: boolean;
+  order: Order | null;
 }
 
-export function OrderModal({ visible }: OrderModalProps) {
-  if (!visible) {
+export function OrderModal({ visible, order }: OrderModalProps) {
+  if (!visible || !order) {
     return null;
   }
 
@@ -30,7 +32,6 @@ export function OrderModal({ visible }: OrderModalProps) {
 
         <OrderDetails>
           <strong>Items</strong>
-          
         </OrderDetails>
       </ModalBody>
     </Overlay>
